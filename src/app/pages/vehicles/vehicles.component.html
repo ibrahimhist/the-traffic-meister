@@ -1,0 +1,17 @@
+<div class="vehicles">
+  <h2 class="vehicles__header">Vehicles with Brand and Color</h2>
+  <app-container-card>
+    <app-vehicle-form
+      [vehicles]="vehicles"
+      (selectedVehicle)="onSelectedVehicle($event)"
+    ></app-vehicle-form>
+  </app-container-card>
+
+  <ng-container *ngIf="selectedVehicle">
+    <h2 class="vehicles__header vehicles__header--primary">
+      Perfect {{ selectedVehicle.type | uppercase }} Selection!
+    </h2>
+
+    <app-vehicle-detail [vehicle]="selectedVehicle"></app-vehicle-detail>
+  </ng-container>
+</div>

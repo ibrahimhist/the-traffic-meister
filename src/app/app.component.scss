@@ -1,0 +1,12 @@
+.container {
+  min-height: 100vh;
+  // max-width: var(--main-container-max-width);
+  margin: 0 auto;
+
+  display: grid;
+  // header main footer
+  grid-template-rows: max-content 1fr max-content;
+  grid-template-columns: 1fr;
+
+  position: relative;
+}

@@ -1,0 +1,26 @@
+.vehicle-detail {
+  &__text {
+    font-size: 1.4rem;
+    &--uppBold {
+      text-transform: uppercase;
+      font-weight: var(--font-weight-md);
+    }
+    &--underlined {
+      text-decoration: underline;
+    }
+    margin-bottom: 1rem;
+  }
+
+  &__img-box {
+    width: 11.5rem;
+    height: 11.5rem;
+    border-radius: var(--border-radius-xs);
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

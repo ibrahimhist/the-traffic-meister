@@ -1,0 +1,25 @@
+.vehicles {
+  width: 100%;
+  height: calc(100vh - 8rem);
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+  max-width: 44rem;
+  margin: auto;
+  flex-direction: column;
+
+  &__form-field {
+    width: 100%;
+  }
+
+  &__header {
+    text-align: center;
+    &--primary {
+      color: var(--color-accent);
+    }
+  }
+}
+
+.vehicle-form {
+  padding: 0 1rem;
+}

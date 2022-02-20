@@ -1,0 +1,14 @@
+.option-with-img {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 2.5rem;
+    height: 2.5rem;
+    box-sizing: content-box;
+    -o-object-fit: cover;
+    object-fit: cover;
+    margin-right: 1rem;
+    border-radius: var(--border-radius-xs);
+  }
+}
